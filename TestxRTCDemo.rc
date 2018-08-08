@@ -1,0 +1,246 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\TestxRTCDemo.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TestxRTCDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MGSDLG DIALOGEX 0, 0, 310, 153
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "消息演示"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "发  送",IDC_SEND,275,131,28,14,WS_GROUP
+    CONTROL         "",IDC_SHOW,"RichEdit20A",ES_MULTILINE | ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP,7,7,296,119
+    CONTROL         "",IDC_INPUT,"RichEdit20A",ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP,134,131,139,15
+    CONTROL         "",IDC_RECVER,"RichEdit20A",ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP,37,131,67,15
+    LTEXT           "接收者：",IDC_STATIC,7,133,28,8
+    LTEXT           "内容：",IDC_STATIC,111,133,22,8
+END
+
+IDD_TESTXRTCDEMO_DIALOG DIALOGEX 0, 0, 396, 294
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TestxRTCDemo"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "离开房间",IDC_BUTTON2,279,21,50,14
+    PUSHBUTTON      "IM初始化",IDC_IM_INIT,339,21,50,14
+    CTEXT           "xRTC测试程序",IDC_STATIC,49,7,300,8,0,WS_EX_TRANSPARENT
+    LTEXT           "",IDC_STATIC_3,184,150,149,95,WS_BORDER
+    LTEXT           "",IDC_STATIC_1,184,56,149,95,WS_BORDER
+    LTEXT           "",IDC_STATIC_2,36,150,149,95,WS_BORDER
+    LTEXT           "",IDC_STATIC_MY,36,56,149,95,WS_BORDER
+    PUSHBUTTON      "进入房间",IDC_BUTTON1,216,20,50,14
+    LTEXT           "房间ID：",IDC_STATIC,24,22,28,8
+    EDITTEXT        IDC_EDIT_ROOM,58,20,51,15,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_NAME,150,21,51,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "用户ID：",IDC_STATIC,118,22,27,10
+    LTEXT           "STATUS",IDC_STATUS,7,272,382,15,0,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+END
+
+IDD_INPUT_TEST DIALOGEX 0, 0, 275, 102
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,204,81,50,14
+    EDITTEXT        IDC_INPUT,32,47,219,14,ES_AUTOHSCROLL
+    CONTROL         "URL:",IDC_TITLE,"Static",SS_SIMPLE | WS_GROUP,19,33,168,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "xRTCDemo"
+            VALUE "FileDescription", "xRTCTest"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TestxRTCDemo.exe"
+            VALUE "LegalCopyright", "TODO: (C) <xRTC>。保留所有权利。"
+            VALUE "OriginalFilename", "TestxRTCDemo.exe"
+            VALUE "ProductName", "xRTCTestDemo"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MGSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_TESTXRTCDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 389
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 287
+    END
+
+    IDD_INPUT_TEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "其它"
+    BEGIN
+        MENUITEM "消息演示",                        ID_SHOWMSG
+        MENUITEM "邀请...",                       ID_INVITE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows 套接字初始化失败。"
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\TestxRTCDemo.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
